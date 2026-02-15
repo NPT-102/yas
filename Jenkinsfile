@@ -15,7 +15,7 @@ pipeline {
     environment {
         MAVEN_OPTS = "-Dmaven.repo.local=.m2/repository"
         COVERAGE_THRESHOLD = "0.70"
-        SONAR_PROJECT_KEY = "nashtech-garage_yas-yas-parent"
+        SONAR_PROJECT_KEY = "NPT-102_yas"
     }
 
     stages {
@@ -120,11 +120,17 @@ pipeline {
                 not { buildingTag() }
             }
             steps {
-                withSonarQubeEnv('SonarQube') {
-                    sh "mvn sonar:sonar -Dsonar.projectKey=${SONAR_PROJECT_KEY}"
+                withSonarQubeEnv('SonarCloud') {
+                    sh """
+                    mvn sonar:sonar \
+                    -Dsonar.projectKey=NPT-102_yas \
+                    -Dsonar.organization=NPT-102 \
+                    -Dsonar.host.url=https://sonarcloud.io
+                    """
                 }
             }
         }
+
 
         stage('Quality Gate') {
             steps {
