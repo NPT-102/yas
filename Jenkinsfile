@@ -30,8 +30,7 @@ pipeline {
             steps {
                 script {
                     def changedFiles = sh(
-                        script: "git diff --name-only origin/${env.CHANGE_TARGET ?: 'main'}
- 2>/dev/null || echo 'all'",
+                        script: "git diff --name-only origin/${env.CHANGE_TARGET ?: 'main'} 2>/dev/null || echo 'all'",
                         returnStdout: true
                     ).trim()
 
@@ -122,7 +121,7 @@ pipeline {
             }
             steps {
                 withSonarQubeEnv('SonarQube') {
-                    sh "mvn sonar:sonar -Dsonar.projectKey=${NPT-102_yas}"
+                    sh "mvn sonar:sonar -Dsonar.projectKey=${SONAR_PROJECT_KEY}"
                 }
             }
         }
