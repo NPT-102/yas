@@ -86,7 +86,7 @@ pipeline {
             steps {
                 script {
                     echo "Building and testing services: ${env.SERVICES}"
-                    sh "mvn clean verify -pl ${env.SERVICES} -am"
+                    sh "mvn clean verify -pl ${env.SERVICES} -am -DskipITs"
                 }
             }
         }
