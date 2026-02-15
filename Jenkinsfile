@@ -122,14 +122,15 @@ pipeline {
             steps {
                 withSonarQubeEnv('SonarCloud') {
                     sh """
-                    mvn sonar:sonar \
+                    mvn org.sonarsource.scanner.maven:sonar-maven-plugin:4.0.0.4121:sonar \
                     -Dsonar.projectKey=NPT-102_yas \
-                    -Dsonar.organization=NPT-102 \
+                    -Dsonar.organization=npt-102 \
                     -Dsonar.host.url=https://sonarcloud.io
                     """
                 }
             }
         }
+
 
 
         stage('Quality Gate') {
