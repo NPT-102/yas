@@ -144,10 +144,15 @@ pipeline {
         stage('Snyk Scan') {
             steps {
                 withCredentials([string(credentialsId: 'snyk-token', variable: 'SNYK_TOKEN')]) {
-                    sh 'snyk test --all-projects'
+                    sh '''
+                        echo "Token length:"
+                        echo ${#SNYK_TOKEN}
+                        snyk test --maven-aggregate-project
+                    '''
                 }
             }
         }
+
 
 
         stage('Release Build (Tag Only)') {
