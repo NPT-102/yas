@@ -145,9 +145,7 @@ pipeline {
             steps {
                 withCredentials([string(credentialsId: 'snyk-token', variable: 'SNYK_TOKEN')]) {
                     sh '''
-                        echo "Token length:"
-                        echo ${#SNYK_TOKEN}
-                        snyk test --severity-threshold=high --maven-aggregate-project
+                        snyk test --all-projects --severity-threshold=critical
 
                     '''
                 }
