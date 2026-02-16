@@ -145,7 +145,6 @@ pipeline {
             steps {
                 withCredentials([string(credentialsId: 'snyk-token', variable: 'SNYK_TOKEN')]) {
                     sh '''
-                        // snyk test --all-projects --severity-threshold=critical
                         snyk test --all-projects || true
 
                     '''
