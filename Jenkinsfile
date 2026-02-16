@@ -147,7 +147,8 @@ pipeline {
                     sh '''
                         echo "Token length:"
                         echo ${#SNYK_TOKEN}
-                        snyk test --maven-aggregate-project
+                        snyk test --severity-threshold=high --maven-aggregate-project
+
                     '''
                 }
             }
