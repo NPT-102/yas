@@ -82,39 +82,6 @@ pipeline {
             }
         }
 
-        stage('Build & Test') {
-            steps {
-                script {
-                    echo "Building and testing services: ${env.SERVICES}"
-                    sh "mvn clean verify -pl ${env.SERVICES} -am -DskipITs -Dmaven.test.failure.ignore=true"
-                }
-            }
-        }
-
-        stage('Generate Aggregate Coverage Report') {
-            steps {
-                script {
-                    echo "Generating aggregate coverage report for all modules"
-                    sh "mvn jacoco:report-aggregate -DskipTests"
-                }
-            }
-        }
-
-        stage('Publish Test Results') {
-            steps {
-                junit allowEmptyResults: true, testResults: '**/target/surefire-reports/*.xml, **/target/failsafe-reports/*.xml'
-                publishHTML([
-                    allowMissing: true,
-                    alwaysLinkToLastBuild: true,
-                    keepAll: true,
-                    reportDir: 'target/site/jacoco-aggregate',
-                    reportFiles: 'index.html',
-                    reportName: 'JaCoCo Coverage Report',
-                    reportTitles: 'Code Coverage'
-                ])
-            }
-        }
-
         stage('SonarQube Analysis') {
             when {
                 not { buildingTag() }
@@ -152,6 +119,41 @@ pipeline {
                 }
             }
         }
+
+        stage('Build & Test') {
+            steps {
+                script {
+                    echo "Building and testing services: ${env.SERVICES}"
+                    sh "mvn clean verify -pl ${env.SERVICES} -am -DskipITs -Dmaven.test.failure.ignore=true"
+                }
+            }
+        }
+
+        stage('Generate Aggregate Coverage Report') {
+            steps {
+                script {
+                    echo "Generating aggregate coverage report for all modules"
+                    sh "mvn jacoco:report-aggregate -DskipTests"
+                }
+            }
+        }
+
+        stage('Publish Test Results') {
+            steps {
+                junit allowEmptyResults: true, testResults: '**/target/surefire-reports/*.xml, **/target/failsafe-reports/*.xml'
+                publishHTML([
+                    allowMissing: true,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
+                    reportDir: 'target/site/jacoco-aggregate',
+                    reportFiles: 'index.html',
+                    reportName: 'JaCoCo Coverage Report',
+                    reportTitles: 'Code Coverage'
+                ])
+            }
+        }
+
+        
 
 
 
