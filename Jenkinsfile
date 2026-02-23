@@ -87,8 +87,9 @@ pipeline {
                     
                     // Create docker-java properties file to force API version 1.44
                     sh '''
-                        mkdir -p ~/.docker-java
-                        echo "DOCKER_API_VERSION=1.44" > ~/.docker-java.properties
+                        echo "api.version=1.44" > ~/.docker-java.properties
+                        echo "DOCKER_API_VERSION=1.44" >> ~/.docker-java.properties
+                        cat ~/.docker-java.properties
                     '''
                 }
                 withEnv([
@@ -98,7 +99,8 @@ pipeline {
                     sh """
                         mvn clean verify \
                             -pl ${env.SERVICES} \
-                            -am
+                            -am \
+                            -DDOCKER_API_VERSION=1.44
                     """
                 }
             }

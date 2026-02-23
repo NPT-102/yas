@@ -419,6 +419,7 @@
                             </includes>
                             <systemPropertyVariables>
                                 <org.testcontainers>true</org.testcontainers>
+                                <DOCKER_API_VERSION>1.44</DOCKER_API_VERSION>
                             </systemPropertyVariables>
                             <environmentVariables>
                                 <DOCKER_API_VERSION>1.44</DOCKER_API_VERSION>
