@@ -76,7 +76,7 @@ pipeline {
 
         stage('Security - Gitleaks') {
             steps {
-                sh 'gitleaks detect --source . --exit-code 1'
+                sh 'gitleaks detect --source . --config gitleaks.toml --exit-code 1'
             }
         }
 

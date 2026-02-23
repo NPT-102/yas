@@ -17,8 +17,43 @@ useDefault = true
 [allowlist]
 description = "global allow list"
 paths = [
-  '''test-realm.json''',
-  '''realm-export''',
-  '''keycloak-yas-realm-import.yaml''',
-  '''target'''
+  '''.*test-realm\.json$''',
+  '''.*realm-export\.json$''',
+  '''.*keycloak-yas-realm-import\.yaml$''',
+  '''.*/src/(test|it)/resources/.*''',
+  '''.*/target/.*'''
+]
+
+regexes = [
+  # Test/Development Keycloak client secrets
+  '''ZrU9I0q2uXBglBnmvyJdkl1lf0ncr8tn''',  # storefrontBffClientSecret
+  '''TVacLC0cQ8tiiEKiTVerTb2YvwQ1TRJF''',  # backofficeBffClientSecret
+  '''NKAr3rnjwm9jlakgKpelukZGFaHYqIWE''',  # customerManagementClientSecret
+  '''cnzK70aLGuuWAdQOUgkdMTlYDCDv1T9V''',  # Additional BFF secret
+  
+  # Test realm client secrets (used in test-realm.json)
+  '''46c49daf-fa62-4744-883d-d32e810cfb9c''',
+  '''134ac396-96f5-432a-8241-faf3de2711f6''',
+  '''8caf9d87-7e94-4597-931a-4cb5357e72b2''',
+  '''590e533b-5a2d-4dd1-9419-d301f326cf0a''',
+  '''55fbb9e1-4410-48b7-b1ad-7b043144b859''',
+  '''70fd3aa0-f353-4860-9a67-5eb86684e0a8''',
+  
+  # Elasticsearch password (development)
+  '''LarUmB3A49NTg9YmgW4='''
+]
+
+stopwords = [
+  # Test/Development secrets that should be ignored
+  "ZrU9I0q2uXBglBnmvyJdkl1lf0ncr8tn",
+  "TVacLC0cQ8tiiEKiTVerTb2YvwQ1TRJF",
+  "NKAr3rnjwm9jlakgKpelukZGFaHYqIWE",
+  "cnzK70aLGuuWAdQOUgkdMTlYDCDv1T9V",
+  "46c49daf-fa62-4744-883d-d32e810cfb9c",
+  "134ac396-96f5-432a-8241-faf3de2711f6",
+  "8caf9d87-7e94-4597-931a-4cb5357e72b2",
+  "590e533b-5a2d-4dd1-9419-d301f326cf0a",
+  "55fbb9e1-4410-48b7-b1ad-7b043144b859",
+  "70fd3aa0-f353-4860-9a67-5eb86684e0a8",
+  "LarUmB3A49NTg9YmgW4="
 ]
