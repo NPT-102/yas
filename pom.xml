@@ -401,6 +401,9 @@
                             <includes>
                                 <include>**/**IT.java</include>
                             </includes>
+                            <systemPropertyVariables>
+                                <org.testcontainers>true</org.testcontainers>
+                            </systemPropertyVariables>
                         </configuration>
                     </execution>
                 </executions>
