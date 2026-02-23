@@ -26,6 +26,12 @@ pipeline {
             }
         }
 
+        stage('Docker Check') {
+            steps {
+                sh 'docker ps'
+            }
+        }
+
         stage('Detect Changed Services') {
             steps {
                 script {
@@ -70,15 +76,7 @@ pipeline {
 
         stage('Security - Gitleaks') {
             steps {
-                script {
-                    def exitCode = sh(
-                        script: 'gitleaks detect --source . --exit-code 1 || true',
-                        returnStatus: true
-                    )
-                    if (exitCode != 0) {
-                        echo "⚠️ Gitleaks found issues, but continuing build"
-                    }
-                }
+                sh 'gitleaks detect --source . --exit-code 1'
             }
         }
 
@@ -145,7 +143,7 @@ pipeline {
             steps {
                 withCredentials([string(credentialsId: 'snyk-token', variable: 'SNYK_TOKEN')]) {
                     sh '''
-                        snyk test --all-projects || true
+                        snyk test --all-projects --severity-threshold=high
 
                     '''
                 }
