@@ -87,6 +87,7 @@ pipeline {
                 }
                 withEnv([
                     'DOCKER_HOST=unix:///var/run/docker.sock',
+                    'DOCKER_API_VERSION=1.44',
                     'TESTCONTAINERS_HOST_OVERRIDE=localhost',
                     'TESTCONTAINERS_RYUK_DISABLED=true',
                     'TESTCONTAINERS_CHECKS_DISABLE=true'
