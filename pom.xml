@@ -420,6 +420,10 @@
                             <systemPropertyVariables>
                                 <org.testcontainers>true</org.testcontainers>
                             </systemPropertyVariables>
+                            <environmentVariables>
+                                <DOCKER_API_VERSION>1.44</DOCKER_API_VERSION>
+                                <TESTCONTAINERS_RYUK_DISABLED>true</TESTCONTAINERS_RYUK_DISABLED>
+                            </environmentVariables>
                         </configuration>
                     </execution>
                 </executions>

@@ -84,16 +84,18 @@ pipeline {
             steps {
                 script {
                     echo "Building and testing services: ${env.SERVICES}"
+                    
+                    // Create docker-java properties file to force API version 1.44
+                    sh '''
+                        mkdir -p ~/.docker-java
+                        echo "DOCKER_API_VERSION=1.44" > ~/.docker-java.properties
+                    '''
                 }
                 withEnv([
-                    'DOCKER_HOST=unix:///var/run/docker.sock',
                     'DOCKER_API_VERSION=1.44',
-                    'TESTCONTAINERS_HOST_OVERRIDE=localhost',
-                    'TESTCONTAINERS_RYUK_DISABLED=true',
-                    'TESTCONTAINERS_CHECKS_DISABLE=true'
+                    'TESTCONTAINERS_RYUK_DISABLED=true'
                 ]) {
                     sh """
-                        docker info
                         mvn clean verify \
                             -pl ${env.SERVICES} \
                             -am
