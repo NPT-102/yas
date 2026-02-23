@@ -80,11 +80,23 @@ pipeline {
             }
         }
 
-        stage('Build & Test') {
+       stage('Build & Test') {
             steps {
                 script {
                     echo "Building and testing services: ${env.SERVICES}"
-                    sh "mvn clean verify -pl ${env.SERVICES} -am -DskipITs"
+                }
+                withEnv([
+                    'DOCKER_HOST=unix:///var/run/docker.sock',
+                    'TESTCONTAINERS_HOST_OVERRIDE=localhost',
+                    'TESTCONTAINERS_RYUK_DISABLED=true',
+                    'TESTCONTAINERS_CHECKS_DISABLE=true'
+                ]) {
+                    sh """
+                        docker info
+                        mvn clean verify \
+                            -pl ${env.SERVICES} \
+                            -am
+                    """
                 }
             }
         }
