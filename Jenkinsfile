@@ -142,8 +142,25 @@ pipeline {
                     -Dsonar.host.url=https://sonarcloud.io
                     """
                 }
+                
+                // Quality Gate check with polling (works without webhook)
+                timeout(time: 15, unit: 'MINUTES') {
+                    script {
+                        echo "⏳ Waiting for Quality Gate result from SonarCloud..."
+                        def qg = waitForQualityGate()
+                        
+                        if (qg.status != 'OK') {
+                            echo "❌ Quality Gate failed: ${qg.status}"
+                            echo "View details: https://sonarcloud.io/dashboard?id=NPT-102_yas"
+                            error "Quality Gate failure: ${qg.status}"
+                        } else {
+                            echo "✅ Quality Gate passed!"
+                        }
+                    }
+                }
             }
         }
+
 
 
         stage('Snyk Scan') {
