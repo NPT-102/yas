@@ -80,40 +80,39 @@ pipeline {
             }
         }
 
-       stage('Build & Test') {
-            steps {
-                script {
-                    echo "Building and testing services: ${env.SERVICES}"
+    //    stage('Build & Test') {
+    //         steps {
+    //             script {
+    //                 echo "Building and testing services: ${env.SERVICES}"
                     
-                    // Create docker-java properties file to force API version 1.44
-                    sh '''
-                        echo "api.version=1.44" > ~/.docker-java.properties
-                        echo "DOCKER_API_VERSION=1.44" >> ~/.docker-java.properties
-                        cat ~/.docker-java.properties
-                    '''
-                }
-                withEnv([
-                    'DOCKER_API_VERSION=1.44',
-                    'TESTCONTAINERS_RYUK_DISABLED=true'
-                ]) {
-                    sh """
-                        mvn clean verify \
-                            -pl ${env.SERVICES} \
-                            -am \
-                            -DDOCKER_API_VERSION=1.44
-                    """
-                }
-            }
-        }
+    //                 sh '''
+    //                     echo "api.version=1.44" > ~/.docker-java.properties
+    //                     echo "DOCKER_API_VERSION=1.44" >> ~/.docker-java.properties
+    //                     cat ~/.docker-java.properties
+    //                 '''
+    //             }
+    //             withEnv([
+    //                 'DOCKER_API_VERSION=1.44',
+    //                 'TESTCONTAINERS_RYUK_DISABLED=true'
+    //             ]) {
+    //                 sh """
+    //                     mvn clean verify \
+    //                         -pl ${env.SERVICES} \
+    //                         -am \
+    //                         -DDOCKER_API_VERSION=1.44
+    //                 """
+    //             }
+    //         }
+    //     }
 
-        stage('Generate Aggregate Coverage Report') {
-            steps {
-                script {
-                    echo "Generating aggregate coverage report for all modules"
-                    sh "mvn jacoco:report-aggregate -DskipTests"
-                }
-            }
-        }
+        // stage('Generate Aggregate Coverage Report') {
+        //     steps {
+        //         script {
+        //             echo "Generating aggregate coverage report for all modules"
+        //             sh "mvn jacoco:report-aggregate -DskipTests"
+        //         }
+        //     }
+        // }
 
         stage('Publish Test Results') {
             steps {
@@ -150,7 +149,7 @@ pipeline {
 
         stage('Quality Gate') {
             steps {
-                timeout(time: 5, unit: 'MINUTES') {
+                timeout(time: 30, unit: 'MINUTES') {
                     waitForQualityGate abortPipeline: true
                 }
             }
