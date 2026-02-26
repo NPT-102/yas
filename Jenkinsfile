@@ -142,25 +142,88 @@ pipeline {
                     -Dsonar.host.url=https://sonarcloud.io
                     """
                 }
-                
-                // Quality Gate check with polling (works without webhook)
-                timeout(time: 15, unit: 'MINUTES') {
-                    script {
-                        echo "⏳ Waiting for Quality Gate result from SonarCloud..."
-                        def qg = waitForQualityGate()
+            }
+        }
+
+        stage('Quality Gate') {
+            when {
+                not { buildingTag() }
+            }
+            steps {
+                script {
+                    echo "⏳ Polling SonarCloud Quality Gate status..."
+                    
+                    // Get SonarCloud token from credentials
+                    withCredentials([string(credentialsId: 'sonarcloud-token', variable: 'SONAR_TOKEN')]) {
+                        def maxAttempts = 60  // 10 minutes with 10s interval
+                        def attempt = 0
+                        def qgPassed = false
+                        def qgStatus = 'PENDING'
                         
-                        if (qg.status != 'OK') {
-                            echo "❌ Quality Gate failed: ${qg.status}"
-                            echo "View details: https://sonarcloud.io/dashboard?id=NPT-102_yas"
-                            error "Quality Gate failure: ${qg.status}"
-                        } else {
-                            echo "✅ Quality Gate passed!"
+                        while (attempt < maxAttempts) {
+                            attempt++
+                            
+                            // Poll Quality Gate API
+                            def apiResponse = sh(
+                                script: """
+                                    curl -s -u \${SONAR_TOKEN}: \
+                                    'https://sonarcloud.io/api/qualitygates/project_status?projectKey=NPT-102_yas' \
+                                    || echo '{"projectStatus":{"status":"ERROR"}}'
+                                """,
+                                returnStdout: true
+                            ).trim()
+                            
+                            echo "Attempt ${attempt}/${maxAttempts}: Checking Quality Gate..."
+                            
+                            // Extract status using grep (no need for JSON parser plugin)
+                            qgStatus = sh(
+                                script: "echo '${apiResponse}' | grep -oP '\"status\":\\s*\"\\K[^\"]+' | head -1 || echo 'UNKNOWN'",
+                                returnStdout: true
+                            ).trim()
+                            
+                            echo "Quality Gate Status: ${qgStatus}"
+                            
+                            if (qgStatus == 'OK') {
+                                qgPassed = true
+                                echo "✅ Quality Gate PASSED!"
+                                break
+                            } else if (qgStatus == 'ERROR') {
+                                echo "❌ Quality Gate FAILED"
+                                echo "Details: https://sonarcloud.io/dashboard?id=NPT-102_yas"
+                                
+                                // Get failure conditions
+                                def conditions = sh(
+                                    script: "echo '${apiResponse}' | grep -oP '\"metricKey\":\\s*\"\\K[^\"]+' || echo ''",
+                                    returnStdout: true
+                                ).trim()
+                                
+                                if (conditions) {
+                                    echo "Failed conditions: ${conditions}"
+                                }
+                                
+                                error("Quality Gate failed with status: ERROR")
+                            } else if (qgStatus == 'NONE' || qgStatus == 'UNKNOWN') {
+                                // Analysis not ready yet, wait and retry
+                                if (attempt < maxAttempts) {
+                                    echo "Analysis not complete, waiting 10 seconds..."
+                                    sleep(10)
+                                } else {
+                                    error("Quality Gate check timeout - analysis not completed")
+                                }
+                            } else {
+                                // Unexpected status
+                                echo "⚠️ Unexpected status: ${qgStatus}, retrying..."
+                                sleep(10)
+                            }
+                        }
+                        
+                        if (!qgPassed) {
+                            error("Quality Gate check timeout after ${maxAttempts} attempts")
                         }
                     }
                 }
             }
         }
-
 
 
         stage('Snyk Scan') {
