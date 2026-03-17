@@ -1,0 +1,1731 @@
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+
+14:40:44  	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.NestedClassTestDescriptor.instantiateTestClass(NestedClassTestDescriptor.java:85)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:287)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+
+14:40:44  	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+
+14:40:44  	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+
+14:40:44  	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+
+14:40:44  	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+
+14:40:44  	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+14:40:44  2026-03-17T14:40:44.081+07:00  WARN 3554634 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.yas.cart.controller.CartItemControllerIT$AddCartItemTest@588fd7ff]
+
+14:40:44  
+
+14:40:44  java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@7c1c416d testClass = com.yas.cart.controller.CartItemControllerIT.AddCartItemTest, locations = [], classes = [com.yas.cart.CartApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [[ImportsContextCustomizer@3bd806eb key = [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, com.yas.commonlibrary.IntegrationTestConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.testcontainers.service.connection.ServiceConnectionAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@515ebef3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@77b9d0c7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@16b9e945, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@719843e5, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@153d4abb, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@2bc9a775, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fa59f493, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@de18f63, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@5c6dbe7d], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+
+14:40:44  	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:145)
+
+14:40:44  	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+
+14:40:44  	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142)
+
+14:40:44  	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:98)
+
+14:40:44  	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+
+14:40:44  	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+
+14:40:44  	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+
+14:40:44  	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+
+14:40:44  	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+
+14:40:44  	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+
+14:40:44  	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+14:40:44  
+
+14:40:44  14:40:44.081 [main] WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.yas.cart.controller.CartItemControllerIT$AddCartItemTest@588fd7ff]
+
+14:40:44  java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@7c1c416d testClass = com.yas.cart.controller.CartItemControllerIT.AddCartItemTest, locations = [], classes = [com.yas.cart.CartApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [[ImportsContextCustomizer@3bd806eb key = [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, com.yas.commonlibrary.IntegrationTestConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.testcontainers.service.connection.ServiceConnectionAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@515ebef3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@77b9d0c7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@16b9e945, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@719843e5, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@153d4abb, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@2bc9a775, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fa59f493, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@de18f63, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@5c6dbe7d], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+
+14:40:44  	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:145)
+
+14:40:44  	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+
+14:40:44  	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142)
+
+14:40:44  	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:98)
+
+14:40:44  	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+
+14:40:44  	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+
+14:40:44  	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+
+14:40:44  	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+
+14:40:44  	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+
+14:40:44  	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+
+14:40:44  	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+14:40:44  2026-03-17T14:40:44.083+07:00  WARN 3554634 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener] to prepare test instance [com.yas.cart.controller.CartItemControllerIT@7f25ff1f]
+
+14:40:44  
+
+14:40:44  java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@694fdebe testClass = com.yas.cart.controller.CartItemControllerIT, locations = [], classes = [com.yas.cart.CartApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [[ImportsContextCustomizer@2e836434 key = [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, com.yas.commonlibrary.IntegrationTestConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.testcontainers.service.connection.ServiceConnectionAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@515ebef3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@77b9d0c7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@16b9e945, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@719843e5, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@153d4abb, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@2bc9a775, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fa59f493, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@de18f63, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@5c6dbe7d], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+
+14:40:44  	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:145)
+
+14:40:44  	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+
+14:40:44  	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:128)
+
+14:40:44  	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:112)
+
+14:40:44  	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:69)
+
+14:40:44  	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+
+14:40:44  	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+
+14:40:44  	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.NestedClassTestDescriptor.instantiateTestClass(NestedClassTestDescriptor.java:85)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:287)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+
+14:40:44  	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+
+14:40:44  	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+
+14:40:44  	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+
+14:40:44  	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+
+14:40:44  	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+14:40:44  
+
+14:40:44  14:40:44.083 [main] WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener] to prepare test instance [com.yas.cart.controller.CartItemControllerIT@7f25ff1f]
+
+14:40:44  java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@694fdebe testClass = com.yas.cart.controller.CartItemControllerIT, locations = [], classes = [com.yas.cart.CartApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [[ImportsContextCustomizer@2e836434 key = [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, com.yas.commonlibrary.IntegrationTestConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.testcontainers.service.connection.ServiceConnectionAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@515ebef3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@77b9d0c7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@16b9e945, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@719843e5, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@153d4abb, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@2bc9a775, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fa59f493, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@de18f63, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@5c6dbe7d], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+
+14:40:44  	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:145)
+
+14:40:44  	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+
+14:40:44  	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:128)
+
+14:40:44  	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:112)
+
+14:40:44  	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:69)
+
+14:40:44  	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+
+14:40:44  	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+
+14:40:44  	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.NestedClassTestDescriptor.instantiateTestClass(NestedClassTestDescriptor.java:85)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:287)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+
+14:40:44  	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+
+14:40:44  	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+
+14:40:44  	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+
+14:40:44  	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+
+14:40:44  	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+14:40:44  2026-03-17T14:40:44.084+07:00  WARN 3554634 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.yas.cart.controller.CartItemControllerIT$AddCartItemTest@6b059523]
+
+14:40:44  
+
+14:40:44  java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@7c1c416d testClass = com.yas.cart.controller.CartItemControllerIT.AddCartItemTest, locations = [], classes = [com.yas.cart.CartApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [[ImportsContextCustomizer@3bd806eb key = [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, com.yas.commonlibrary.IntegrationTestConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.testcontainers.service.connection.ServiceConnectionAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@515ebef3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@77b9d0c7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@16b9e945, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@719843e5, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@153d4abb, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@2bc9a775, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fa59f493, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@de18f63, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@5c6dbe7d], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+
+14:40:44  	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:145)
+
+14:40:44  	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+
+14:40:44  	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142)
+
+14:40:44  	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:98)
+
+14:40:44  	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+
+14:40:44  	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+
+14:40:44  	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+
+14:40:44  	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+
+14:40:44  	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+
+14:40:44  	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+
+14:40:44  	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+14:40:44  
+
+14:40:44  14:40:44.084 [main] WARN  o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.yas.cart.controller.CartItemControllerIT$AddCartItemTest@6b059523]
+
+14:40:44  java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@7c1c416d testClass = com.yas.cart.controller.CartItemControllerIT.AddCartItemTest, locations = [], classes = [com.yas.cart.CartApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [[ImportsContextCustomizer@3bd806eb key = [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, com.yas.commonlibrary.IntegrationTestConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.testcontainers.service.connection.ServiceConnectionAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@515ebef3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@77b9d0c7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@16b9e945, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@719843e5, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@153d4abb, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@2bc9a775, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fa59f493, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@de18f63, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@5c6dbe7d], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+
+14:40:44  	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:145)
+
+14:40:44  	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+
+14:40:44  	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142)
+
+14:40:44  	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:98)
+
+14:40:44  	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+
+14:40:44  	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$12(ClassBasedTestDescriptor.java:378)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$7(ClassBasedTestDescriptor.java:290)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:279)
+
+14:40:44  	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$6(ClassBasedTestDescriptor.java:278)
+
+14:40:44  	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$1(TestMethodTestDescriptor.java:105)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+
+14:40:44  	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:128)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:128)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+
+14:40:44  	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+
+14:40:44  	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+
+14:40:44  	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+
+14:40:44  	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+
+14:40:44  	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+
+14:40:44  	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+
+14:40:44  	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+14:40:44  [ERROR] Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! -- in com.yas.cart.controller.CartItemControllerIT$AddCartItemTest
+
+14:40:44  [ERROR] com.yas.cart.controller.CartItemControllerIT$AddCartItemTest.testAddCartItem_whenCartItemExists_shouldUpdateCartItemQuantity -- Time elapsed: 0 s <<< ERROR!
+
+14:40:44  java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@694fdebe testClass = com.yas.cart.controller.CartItemControllerIT, locations = [], classes = [com.yas.cart.CartApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [[ImportsContextCustomizer@2e836434 key = [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, com.yas.commonlibrary.IntegrationTestConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.testcontainers.service.connection.ServiceConnectionAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@515ebef3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@77b9d0c7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@16b9e945, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@719843e5, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@153d4abb, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@2bc9a775, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fa59f493, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@de18f63, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@5c6dbe7d], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+
+14:40:44  	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:145)
+
+14:40:44  	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+
+14:40:44  	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:128)
+
+14:40:44  	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:112)
+
+14:40:44  	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:69)
+
+14:40:44  	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+
+14:40:44  	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+
+14:40:44  	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+
+14:40:44  	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	Suppressed: java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@7c1c416d testClass = com.yas.cart.controller.CartItemControllerIT.AddCartItemTest, locations = [], classes = [com.yas.cart.CartApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [[ImportsContextCustomizer@3bd806eb key = [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, com.yas.commonlibrary.IntegrationTestConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.testcontainers.service.connection.ServiceConnectionAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@515ebef3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@77b9d0c7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@16b9e945, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@719843e5, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@153d4abb, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@2bc9a775, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fa59f493, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@de18f63, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@5c6dbe7d], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+
+14:40:44  		at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:145)
+
+14:40:44  		at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+
+14:40:44  		at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142)
+
+14:40:44  		at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:98)
+
+14:40:44  		at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+
+14:40:44  		at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+
+14:40:44  		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+
+14:40:44  		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  		at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+
+14:40:44  		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  		at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+
+14:40:44  		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+
+14:40:44  		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+
+14:40:44  		at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+
+14:40:44  		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+
+14:40:44  		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+
+14:40:44  		at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+
+14:40:44  		... 4 more
+
+14:40:44  
+
+14:40:44  [ERROR] com.yas.cart.controller.CartItemControllerIT$AddCartItemTest.testAddCartItem_whenRequestIsValid_shouldReturnCartItemGetVm -- Time elapsed: 0.001 s <<< ERROR!
+
+14:40:44  java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@694fdebe testClass = com.yas.cart.controller.CartItemControllerIT, locations = [], classes = [com.yas.cart.CartApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [[ImportsContextCustomizer@2e836434 key = [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, com.yas.commonlibrary.IntegrationTestConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.testcontainers.service.connection.ServiceConnectionAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@515ebef3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@77b9d0c7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@16b9e945, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@719843e5, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@153d4abb, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@2bc9a775, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fa59f493, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@de18f63, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@5c6dbe7d], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+
+14:40:44  	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:145)
+
+14:40:44  	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+
+14:40:44  	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:128)
+
+14:40:44  	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:112)
+
+14:40:44  	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:69)
+
+14:40:44  	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+
+14:40:44  	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+
+14:40:44  	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+
+14:40:44  	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+
+14:40:44  	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+
+14:40:44  	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+
+14:40:44  	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+14:40:44  	Suppressed: java.lang.IllegalStateException: ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@7c1c416d testClass = com.yas.cart.controller.CartItemControllerIT.AddCartItemTest, locations = [], classes = [com.yas.cart.CartApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [[ImportsContextCustomizer@3bd806eb key = [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, com.yas.commonlibrary.IntegrationTestConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.testcontainers.service.connection.ServiceConnectionAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@515ebef3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@77b9d0c7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@16b9e945, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@719843e5, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@153d4abb, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@2bc9a775, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fa59f493, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@de18f63, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@5c6dbe7d], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+
+14:40:44  		at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:145)
+
+14:40:44  		at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+
+14:40:44  		at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:142)
+
+14:40:44  		at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:98)
+
+14:40:44  		at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+
+14:40:44  		at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:160)
+
+14:40:44  		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+
+14:40:44  		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  		at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+
+14:40:44  		at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+
+14:40:44  		at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
+
+14:40:44  		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+
+14:40:44  		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+
+14:40:44  		at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+
+14:40:44  		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+
+14:40:44  		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+
+14:40:44  		at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+
+14:40:44  		... 4 more
+
+14:40:44  
+
+14:40:44  [INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.021 s -- in com.yas.cart.controller.CartItemControllerIT
+
+14:40:44  [INFO] Running com.yas.cart.service.ProductServiceIT
+
+14:40:44  2026-03-17T14:40:44.091+07:00  INFO 3554634 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.yas.cart.service.ProductServiceIT]: ProductServiceIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+
+14:40:44  14:40:44.091 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.yas.cart.service.ProductServiceIT]: ProductServiceIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+
+14:40:44  2026-03-17T14:40:44.107+07:00  INFO 3554634 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.yas.cart.CartApplication for test class com.yas.cart.service.ProductServiceIT
+
+14:40:44  14:40:44.107 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.yas.cart.CartApplication for test class com.yas.cart.service.ProductServiceIT
+
+14:40:44  2026-03-17T14:40:44.113+07:00  INFO 3554634 --- [           main] tc.postgres:16                           : Creating container for image: postgres:16
+
+14:40:44  14:40:44.113 [main] INFO  tc.postgres:16 - Creating container for image: postgres:16
+
+14:40:44  2026-03-17T14:40:44.118+07:00  INFO 3554634 --- [           main] o.t.utility.RegistryAuthLocator          : Failure when attempting to lookup auth config. Please ignore if you don't have images in an authenticated registry. Details: (dockerImageName: postgres:16, configFile: /var/lib/jenkins/.docker/config.json, configEnv: DOCKER_AUTH_CONFIG). Falling back to docker-java default behaviour. Exception message: Status 404: No config supplied. Checked in order: /var/lib/jenkins/.docker/config.json (file not found), DOCKER_AUTH_CONFIG (not set)
+
+14:40:44  14:40:44.118 [main] INFO  o.t.utility.RegistryAuthLocator - Failure when attempting to lookup auth config. Please ignore if you don't have images in an authenticated registry. Details: (dockerImageName: postgres:16, configFile: /var/lib/jenkins/.docker/config.json, configEnv: DOCKER_AUTH_CONFIG). Falling back to docker-java default behaviour. Exception message: Status 404: No config supplied. Checked in order: /var/lib/jenkins/.docker/config.json (file not found), DOCKER_AUTH_CONFIG (not set)
+
+14:40:44  2026-03-17T14:40:44.348+07:00  INFO 3554634 --- [           main] tc.postgres:16                           : Container postgres:16 is starting: 1c28384f5a835a724cd50ac92dc24ba0daf8d1c9faf7d4ce636af46000c68fef
+
+14:40:44  14:40:44.348 [main] INFO  tc.postgres:16 - Container postgres:16 is starting: 1c28384f5a835a724cd50ac92dc24ba0daf8d1c9faf7d4ce636af46000c68fef
+
+14:40:46  2026-03-17T14:40:45.962+07:00  INFO 3554634 --- [           main] tc.postgres:16                           : Container postgres:16 started in PT1.848509171S
+
+14:40:46  14:40:45.962 [main] INFO  tc.postgres:16 - Container postgres:16 started in PT1.848509171S
+
+14:40:46  2026-03-17T14:40:45.963+07:00  INFO 3554634 --- [           main] tc.postgres:16                           : Container is started (JDBC URL: jdbc:postgresql://localhost:33211/test?loggerLevel=OFF)
+
+14:40:46  14:40:45.963 [main] INFO  tc.postgres:16 - Container is started (JDBC URL: jdbc:postgresql://localhost:33211/test?loggerLevel=OFF)
+
+14:40:46  
+
+14:40:46    .   ____          _            __ _ _
+
+14:40:46   /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+
+14:40:46  ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+
+14:40:46   \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+
+14:40:46    '  |____| .__|_| |_|_| |_\__, | / / / /
+
+14:40:46   =========|_|==============|___/=/_/_/_/
+
+14:40:46  
+
+14:40:46   :: Spring Boot ::                (v3.4.1)
+
+14:40:46  
+
+14:40:46  2026-03-17T14:40:45.997+07:00  INFO 3554634 --- [           main] com.yas.cart.service.ProductServiceIT    : Starting ProductServiceIT using Java 21.0.10 with PID 3554634 (started by jenkins in /var/lib/jenkins/workspace/YAS_test_full-jacoco-report/cart)
+
+14:40:46  14:40:45.997 [main] INFO  c.yas.cart.service.ProductServiceIT - Starting ProductServiceIT using Java 21.0.10 with PID 3554634 (started by jenkins in /var/lib/jenkins/workspace/YAS_test_full-jacoco-report/cart)
+
+14:40:46  2026-03-17T14:40:45.998+07:00  INFO 3554634 --- [           main] com.yas.cart.service.ProductServiceIT    : The following 1 profile is active: "test"
+
+14:40:46  14:40:45.998 [main] INFO  c.yas.cart.service.ProductServiceIT - The following 1 profile is active: "test"
+
+14:40:46  2026-03-17T14:40:46.093+07:00  INFO 3554634 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+
+14:40:46  14:40:46.093 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+
+14:40:46  2026-03-17T14:40:46.096+07:00  INFO 3554634 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+
+14:40:46  14:40:46.096 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+
+14:40:46  2026-03-17T14:40:46.341+07:00  INFO 3554634 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+
+14:40:46  14:40:46.341 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+
+14:40:46  2026-03-17T14:40:46.380+07:00  INFO 3554634 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+
+14:40:46  14:40:46.380 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+
+14:40:46  2026-03-17T14:40:46.402+07:00  INFO 3554634 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+
+14:40:46  14:40:46.402 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+
+14:40:46  2026-03-17T14:40:46.491+07:00  INFO 3554634 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+
+14:40:46  14:40:46.491 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+
+14:40:46  2026-03-17T14:40:46.514+07:00  INFO 3554634 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+
+14:40:46  14:40:46.514 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+
+14:40:46  2026-03-17T14:40:46.643+07:00  INFO 3554634 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4b4807e0
+
+14:40:46  14:40:46.643 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4b4807e0
+
+14:40:46  2026-03-17T14:40:46.644+07:00  INFO 3554634 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+
+14:40:46  14:40:46.644 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+
+14:40:46  2026-03-17T14:40:46.700+07:00  INFO 3554634 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+
+14:40:46  	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+
+14:40:46  	Database driver: undefined/unknown
+
+14:40:46  	Database version: 16.12
+
+14:40:46  	Autocommit mode: undefined/unknown
+
+14:40:46  	Isolation level: undefined/unknown
+
+14:40:46  	Minimum pool size: undefined/unknown
+
+14:40:46  	Maximum pool size: undefined/unknown
+
+14:40:46  14:40:46.700 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+
+14:40:46  	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+
+14:40:46  	Database driver: undefined/unknown
+
+14:40:46  	Database version: 16.12
+
+14:40:46  	Autocommit mode: undefined/unknown
+
+14:40:46  	Isolation level: undefined/unknown
+
+14:40:46  	Minimum pool size: undefined/unknown
+
+14:40:46  	Maximum pool size: undefined/unknown
+
+14:40:47  2026-03-17T14:40:47.284+07:00  INFO 3554634 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+
+14:40:47  14:40:47.284 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+
+14:40:47  2026-03-17T14:40:47.314+07:00  INFO 3554634 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+14:40:47  14:40:47.314 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+14:40:47  2026-03-17T14:40:47.551+07:00  INFO 3554634 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+
+14:40:47  14:40:47.551 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+
+14:40:48  2026-03-17T14:40:48.186+07:00  WARN 3554634 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+14:40:48  14:40:48.186 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+14:40:48  2026-03-17T14:40:48.553+07:00  INFO 3554634 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+
+14:40:48  14:40:48.553 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+
+14:40:49  2026-03-17T14:40:49.334+07:00  INFO 3554634 --- [           main] com.yas.cart.service.ProductServiceIT    : Started ProductServiceIT in 3.359 seconds (process running for 10.735)
+
+14:40:49  14:40:49.334 [main] INFO  c.yas.cart.service.ProductServiceIT - Started ProductServiceIT in 3.359 seconds (process running for 10.735)
+
+14:40:49  2026-03-17T14:40:49.404+07:00 ERROR 3554634 --- [           main] .c.s.AbstractCircuitBreakFallbackHandler : Circuit breaker records an error. Detail CircuitBreaker 'restCircuitBreaker' is OPEN and does not permit further calls
+
+14:40:49  14:40:49.404 [main] ERROR c.y.c.s.AbstractCircuitBreakFallbackHandler - Circuit breaker records an error. Detail CircuitBreaker 'restCircuitBreaker' is OPEN and does not permit further calls
+
+14:40:50  2026-03-17T14:40:49.908+07:00 ERROR 3554634 --- [           main] .c.s.AbstractCircuitBreakFallbackHandler : Circuit breaker records an error. Detail CircuitBreaker 'restCircuitBreaker' is OPEN and does not permit further calls
+
+14:40:50  14:40:49.908 [main] ERROR c.y.c.s.AbstractCircuitBreakFallbackHandler - Circuit breaker records an error. Detail CircuitBreaker 'restCircuitBreaker' is OPEN and does not permit further calls
+
+14:40:50  2026-03-17T14:40:50.412+07:00 ERROR 3554634 --- [           main] .c.s.AbstractCircuitBreakFallbackHandler : Circuit breaker records an error. Detail CircuitBreaker 'restCircuitBreaker' is OPEN and does not permit further calls
+
+14:40:50  14:40:50.412 [main] ERROR c.y.c.s.AbstractCircuitBreakFallbackHandler - Circuit breaker records an error. Detail CircuitBreaker 'restCircuitBreaker' is OPEN and does not permit further calls
+
+14:40:51  [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.664 s -- in com.yas.cart.service.ProductServiceIT
+
+14:40:51  [INFO] 
+
+14:40:51  [INFO] Results:
+
+14:40:51  [INFO] 
+
+14:40:51  [ERROR] Errors: 
+
+14:40:51  [ERROR]   CartItemControllerIT$AddCartItemTest.testAddCartItem_whenCartItemExists_shouldUpdateCartItemQuantity » IllegalState ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@694fdebe testClass = com.yas.cart.controller.CartItemControllerIT, locations = [], classes = [com.yas.cart.CartApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [[ImportsContextCustomizer@2e836434 key = [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, com.yas.commonlibrary.IntegrationTestConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.testcontainers.service.connection.ServiceConnectionAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@515ebef3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@77b9d0c7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@16b9e945, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@719843e5, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@153d4abb, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@2bc9a775, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fa59f493, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@de18f63, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@5c6dbe7d], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+
+14:40:51  [ERROR]   CartItemControllerIT$AddCartItemTest.testAddCartItem_whenRequestIsValid_shouldReturnCartItemGetVm » IllegalState ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@694fdebe testClass = com.yas.cart.controller.CartItemControllerIT, locations = [], classes = [com.yas.cart.CartApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [[ImportsContextCustomizer@2e836434 key = [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, com.yas.commonlibrary.IntegrationTestConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.testcontainers.service.connection.ServiceConnectionAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@515ebef3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@77b9d0c7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@16b9e945, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@719843e5, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@153d4abb, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@2bc9a775, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fa59f493, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@de18f63, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@5c6dbe7d], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+
+14:40:51  [ERROR]   CartItemControllerIT$DeleteCartItemTest.testDeleteCartItem_whenCartItemExists_shouldDeleteCartItem » IllegalState Failed to load ApplicationContext for [WebMergedContextConfiguration@694fdebe testClass = com.yas.cart.controller.CartItemControllerIT, locations = [], classes = [com.yas.cart.CartApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [[ImportsContextCustomizer@2e836434 key = [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, com.yas.commonlibrary.IntegrationTestConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.testcontainers.service.connection.ServiceConnectionAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@515ebef3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@77b9d0c7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@16b9e945, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@719843e5, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@153d4abb, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@2bc9a775, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fa59f493, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@de18f63, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@5c6dbe7d], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+
+14:40:51  [ERROR]   CartItemControllerIT$DeleteOrAdjustCartItemTest.testDeleteOrAdjustCartItem_whenDeleteQuantityIsGreaterThanOrEqualToCartItemQuantity_shouldDeleteCartItem » IllegalState ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@694fdebe testClass = com.yas.cart.controller.CartItemControllerIT, locations = [], classes = [com.yas.cart.CartApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [[ImportsContextCustomizer@2e836434 key = [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, com.yas.commonlibrary.IntegrationTestConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.testcontainers.service.connection.ServiceConnectionAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@515ebef3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@77b9d0c7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@16b9e945, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@719843e5, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@153d4abb, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@2bc9a775, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fa59f493, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@de18f63, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@5c6dbe7d], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+
+14:40:51  [ERROR]   CartItemControllerIT$DeleteOrAdjustCartItemTest.testDeleteOrAdjustCartItem_whenDeleteQuantityIsLessThanCartItemQuantity_shouldAdjustCartItemQuantity » IllegalState ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@694fdebe testClass = com.yas.cart.controller.CartItemControllerIT, locations = [], classes = [com.yas.cart.CartApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [[ImportsContextCustomizer@2e836434 key = [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, com.yas.commonlibrary.IntegrationTestConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.testcontainers.service.connection.ServiceConnectionAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@515ebef3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@77b9d0c7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@16b9e945, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@719843e5, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@153d4abb, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@2bc9a775, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fa59f493, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@de18f63, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@5c6dbe7d], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+
+14:40:51  [ERROR]   CartItemControllerIT$GetCartItemsTest.testGetCartItems_whenCartItemsExist_shouldReturnCartItems » IllegalState ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@694fdebe testClass = com.yas.cart.controller.CartItemControllerIT, locations = [], classes = [com.yas.cart.CartApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [[ImportsContextCustomizer@2e836434 key = [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, com.yas.commonlibrary.IntegrationTestConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.testcontainers.service.connection.ServiceConnectionAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@515ebef3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@77b9d0c7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@16b9e945, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@719843e5, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@153d4abb, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@2bc9a775, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fa59f493, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@de18f63, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@5c6dbe7d], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+
+14:40:51  [ERROR]   CartItemControllerIT$UpdateCartItemTest.testUpdateCartItem_whenRequestIsValid_shouldReturnCartItemGetVm » IllegalState ApplicationContext failure threshold (1) exceeded: skipping repeated attempt to load context for [WebMergedContextConfiguration@694fdebe testClass = com.yas.cart.controller.CartItemControllerIT, locations = [], classes = [com.yas.cart.CartApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true", "server.port=0"], contextCustomizers = [[ImportsContextCustomizer@2e836434 key = [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, com.yas.commonlibrary.IntegrationTestConfiguration, org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration, org.springframework.boot.testcontainers.service.connection.ServiceConnectionAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@515ebef3, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@77b9d0c7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@16b9e945, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@719843e5, org.springframework.boot.test.web.reactor.netty.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@153d4abb, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@2bc9a775, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@fa59f493, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@de18f63, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.testcontainers.service.connection.ServiceConnectionContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@5c6dbe7d], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+
+14:40:51  [INFO] 
+
+14:40:51  [ERROR] Tests run: 8, Failures: 0, Errors: 7, Skipped: 0
+
+14:40:51  [INFO] 
+
+14:40:51  [INFO] 
+
+14:40:51  [INFO] --- failsafe:3.4.0:verify (default) @ cart ---
+
+14:40:51  [INFO] ------------------------------------------------------------------------
+
+14:40:51  [INFO] Reactor Summary for yas 1.0-SNAPSHOT:
+
+14:40:51  [INFO] 
+
+14:40:51  [INFO] yas ................................................ SUCCESS [  3.729 s]
+
+14:40:51  [INFO] Common Library ..................................... SUCCESS [  6.491 s]
+
+14:40:51  [INFO] backoffice-bff ..................................... SUCCESS [  2.553 s]
+
+14:40:51  [INFO] cart ............................................... FAILURE [ 17.817 s]
+
+14:40:51  [INFO] customer ........................................... SKIPPED
+
+14:40:51  [INFO] inventory .......................................... SKIPPED
+
+14:40:51  [INFO] location ........................................... SKIPPED
+
+14:40:51  [INFO] media .............................................. SKIPPED
+
+14:40:51  [INFO] order .............................................. SKIPPED
+
+14:40:51  [INFO] payment-paypal ..................................... SKIPPED
+
+14:40:51  [INFO] payment ............................................ SKIPPED
+
+14:40:51  [INFO] product ............................................ SKIPPED
+
+14:40:51  [INFO] promotion .......................................... SKIPPED
+
+14:40:51  [INFO] rating ............................................. SKIPPED
+
+14:40:51  [INFO] search ............................................. SKIPPED
+
+14:40:51  [INFO] storefront-bff ..................................... SKIPPED
+
+14:40:51  [INFO] tax ................................................ SKIPPED
+
+14:40:51  [INFO] webhook ............................................ SKIPPED
+
+14:40:51  [INFO] sampledata ......................................... SKIPPED
+
+14:40:51  [INFO] recommendation ..................................... SKIPPED
+
+14:40:51  [INFO] delivery ........................................... SKIPPED
+
+14:40:51  [INFO] ------------------------------------------------------------------------
+
+14:40:51  [INFO] BUILD FAILURE
+
+14:40:51  [INFO] ------------------------------------------------------------------------
+
+14:40:51  [INFO] Total time:  30.798 s
+
+14:40:51  [INFO] Finished at: 2026-03-17T14:40:50+07:00
+
+14:40:51  [INFO] ------------------------------------------------------------------------
+
+14:40:51  [ERROR] Failed to execute goal org.apache.maven.plugins:maven-failsafe-plugin:3.4.0:verify (default) on project cart: 
+
+14:40:51  [ERROR] 
+
+14:40:51  [ERROR] Please refer to /var/lib/jenkins/workspace/YAS_test_full-jacoco-report/cart/target/failsafe-reports for the individual test results.
+
+14:40:51  [ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+
+14:40:51  [ERROR] -> [Help 1]
+
+14:40:51  [ERROR] 
+
+14:40:51  [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+
+14:40:51  [ERROR] Re-run Maven using the -X switch to enable full debug logging.
+
+14:40:51  [ERROR] 
+
+14:40:51  [ERROR] For more information about the errors and possible solutions, please read the following articles:
+
+14:40:51  [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+14:40:51  [ERROR] 
+
+14:40:51  [ERROR] After correcting the problems, you can resume the build with the command
+
+14:40:51  [ERROR]   mvn <args> -rf :cart
+
+script returned exit code 1
