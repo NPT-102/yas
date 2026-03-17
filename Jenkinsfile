@@ -116,6 +116,8 @@ pipeline {
                         echo "DOCKER_API_VERSION=1.44" >> ~/.docker-java.properties
                         cat ~/.docker-java.properties
                     '''
+
+                    sh 'docker pull quay.io/keycloak/keycloak:26.0 || true'
                 }
                 withEnv([
                     'DOCKER_API_VERSION=1.44',

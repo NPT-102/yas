@@ -3,7 +3,7 @@
 	<property name="ENCODING" value="UTF-8" />
 	<property name="LOG_LEVEL" value="DEBUG" />
 	<include
-		resource="org/springframework/boot/logging/logback/base.xml" />
+		resource="org/springframework/boot/logging/logback/defaults.xml" />
 	<springProperty scope="context" name="appName"
 		source="spring.application.name" />
 	<!-- Reuse the log from Spring -->
