@@ -1,5 +1,6 @@
 package com.yas.search.config;
 
+import java.time.Duration;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -20,6 +21,8 @@ public class ImperativeClientConfig extends ElasticsearchConfiguration {
         return ClientConfiguration.builder()
                 .connectedTo(elasticsearchConfig.getUrl())
                 .withBasicAuth(elasticsearchConfig.getUsername(), elasticsearchConfig.getPassword())
+                .withConnectTimeout(Duration.ofSeconds(10))
+                .withSocketTimeout(Duration.ofSeconds(30))
                 .build();
     }
 }
