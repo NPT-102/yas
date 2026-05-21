@@ -37,7 +37,7 @@ pipeline {
             steps {
                 script {
                     env.HAS_SERVICES = 'true'
-                    env.SERVICES = 'media'
+                    env.SERVICES = 'cart'
                     echo "Forced services to build: ${env.SERVICES}"
                 }
             }
