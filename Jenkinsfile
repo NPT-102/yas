@@ -15,7 +15,7 @@ pipeline {
     environment {
         MAVEN_OPTS = "-Dmaven.repo.local=.m2/repository"
         COVERAGE_THRESHOLD = "0.70"
-        ENFORCE_PER_MODULE = "true"  // Local JaCoCo check per module
+        ENFORCE_PER_MODULE = "true"
         SONAR_PROJECT_KEY = "NPT-102_yas"
     }
 
@@ -190,7 +190,13 @@ pipeline {
                             echo "🔍 Running SonarQube branch analysis for ${env.BRANCH_NAME}"
                         }
 
-                        sh "mvn org.sonarsource.scanner.maven:sonar-maven-plugin:4.0.0.4121:sonar ${sonarParams}"
+                        sh """
+                            mvn org.sonarsource.scanner.maven:sonar-maven-plugin:4.0.0.4121:sonar \
+                                -pl ${env.SERVICES} \
+                                -am \
+                                -Dsonar.java.binaries=**/target/classes \
+                                ${sonarParams}
+                        """
                     }
                 }
             }
