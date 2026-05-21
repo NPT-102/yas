@@ -190,10 +190,17 @@ pipeline {
                             echo "🔍 Running SonarQube branch analysis for ${env.BRANCH_NAME}"
                         }
 
-                        sh "mvn org.sonarsource.scanner.maven:sonar-maven-plugin:4.0.0.4121:sonar ${sonarParams}"
+                        sh """
+                            mvn org.sonarsource.scanner.maven:sonar-maven-plugin:4.0.0.4121:sonar \
+                                -pl ${env.SERVICES} \
+                                -am \
+                                -Dsonar.java.binaries=**/target/classes \
+                                ${sonarParams}
+                        """
                     }
                 }
             }
+        }
         }
 
         stage('Quality Gate') {
