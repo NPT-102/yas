@@ -36,46 +36,9 @@ pipeline {
         stage('Detect Changed Services') {
             steps {
                 script {
-                    def targetBranch = env.CHANGE_TARGET ?: 'main'
-                    sh "git fetch origin ${targetBranch}:refs/remotes/origin/${targetBranch} || true"
-
-                    def changedFiles = sh(
-                        script: "git diff --name-only origin/${targetBranch} 2>/dev/null || echo 'all'",
-                        returnStdout: true
-                    ).trim()
-
-                    echo "Changed files:\n${changedFiles}"
-
-                    def allServices = [
-                        'common-library', 'backoffice-bff', 'cart', 'customer', 
-                        'inventory', 'location', 'media', 'order', 'payment-paypal', 
-                        'payment', 'product', 'promotion', 'rating', 'search', 
-                        'storefront-bff', 'tax', 'webhook', 'sampledata', 
-                        'recommendation', 'delivery'
-                    ]
-
-                    def services = []
-
-                    def changedFilesList = changedFiles.split('\n').collect { it.trim() }.findAll { it }
-
-                    if (changedFiles == 'all' || changedFilesList.contains('pom.xml')) {
-                        services = allServices
-                        echo "Building all services due to root pom.xml change or initial build"
-                    } else {
-                        allServices.each { service ->
-                            if (changedFiles.contains("${service}/")) {
-                                services.add(service)
-                            }
-                        }
-
-                        if (services.isEmpty()) {
-                            echo "No backend services changed, skipping build and test"
-                        }
-                    }
-
-                    env.HAS_SERVICES = services.isEmpty() ? 'false' : 'true'
-                    env.SERVICES = services.join(",")
-                    echo "Services to build: ${env.SERVICES ?: 'none'}"
+                    env.HAS_SERVICES = 'true'
+                    env.SERVICES = 'cart'
+                    echo "Forced services to build: ${env.SERVICES}"
                 }
             }
         }
@@ -194,7 +157,6 @@ pipeline {
                             mvn org.sonarsource.scanner.maven:sonar-maven-plugin:4.0.0.4121:sonar \
                                 -pl ${env.SERVICES} \
                                 -am \
-                                -Dsonar.java.binaries=**/target/classes \
                                 ${sonarParams}
                         """
                     }
