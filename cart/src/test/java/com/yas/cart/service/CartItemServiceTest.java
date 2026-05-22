@@ -38,6 +38,7 @@ import org.springframework.security.oauth2.server.resource.authentication.JwtAut
 
 @ExtendWith(MockitoExtension.class)
 class CartItemServiceTest {
+    // CI trigger: keep one cart-only change to validate cart pipeline path.
     @Mock
     private CartItemRepository cartItemRepository;
 
